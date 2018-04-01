@@ -1,0 +1,25 @@
+﻿<Window x:Class="Monitoring.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monitoring"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600.964" Width="920.106">
+    <Grid Background="#FF383437" Margin="0,0,0,-1">
+        <Image x:Name="logo_mono" HorizontalAlignment="Left" Height="203" VerticalAlignment="Top" Width="367" Source="./assets/logo_monitor.png" Margin="531,-18,0,0"/>
+        <Image HorizontalAlignment="Left" Height="219" Margin="10,172,0,0" VerticalAlignment="Top" Width="455" Source="./assets/cache_request.png"/>
+        <Image HorizontalAlignment="Left" Height="218" Margin="10,254,0,0" VerticalAlignment="Top" Width="455" Source="./assets/nb_request.png"/>
+        <Label x:Name="nb_cache_request" Content=" " HorizontalAlignment="Left" Margin="449,184,0,0" VerticalAlignment="Top" Foreground="#FF43DABF" FontSize="20" FontFamily="Comic Sans MS"/>
+        <Label x:Name="nb_request" Content=" " HorizontalAlignment="Left" Margin="449,264,0,0" VerticalAlignment="Top" Foreground="#FF43DABF" FontSize="20" FontFamily="Comic Sans MS"/>
+        <Button x:Name="RefreshButton" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="768,490,0,0" Click="RefreshButton_Click" BorderBrush="{x:Null}" FontFamily="Comic Sans MS" FontSize="16" Foreground="#FF65DBEE" Height="60" >
+            <Button.Background>
+                <ImageBrush ImageSource="./assets/refresh_btn.png"/>
+            </Button.Background>
+        </Button>
+
+        <Image HorizontalAlignment="Left" Height="188" Margin="18,362,0,0" VerticalAlignment="Top" Width="330" Source="./assets/cache_content.png"/>
+        <ListBox x:Name="cache_content" HorizontalAlignment="Left" Height="160" Margin="449,362,0,0" VerticalAlignment="Top" Width="261" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF43DABF" FontFamily="Comic Sans MS" FontSize="14"/>
+
+    </Grid>
+</Window>

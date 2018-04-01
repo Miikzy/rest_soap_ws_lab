@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Service1?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Service1?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Service1?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IWS_Soap" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetCities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCities" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetStationsByCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStationsByCity" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetStationsByCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStationsByCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetInfoByStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByStation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetInfoByStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefreshCache_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshCache" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefreshCache_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshCacheResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetCities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCities" message="tns:IService1_GetCities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCitiesResponse" message="tns:IService1_GetCities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStationsByCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetStationsByCity" message="tns:IService1_GetStationsByCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetStationsByCityResponse" message="tns:IService1_GetStationsByCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetInfoByStation" message="tns:IService1_GetInfoByStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetInfoByStationResponse" message="tns:IService1_GetInfoByStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshCache">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RefreshCache" message="tns:IService1_RefreshCache_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RefreshCacheResponse" message="tns:IService1_RefreshCache_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCities">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationsByCity">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetStationsByCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByStation">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetInfoByStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshCache">
+      <soap:operation soapAction="http://tempuri.org/IService1/RefreshCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="MyService1" binding="tns:MyService1">
+      <soap:address location="http://localhost:8081/Service1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

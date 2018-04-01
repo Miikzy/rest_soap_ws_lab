@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="667" Width="989.279">
+    <Grid Margin="0,0,2,5">
+        <ListBox x:Name="city_list" HorizontalAlignment="Left" Height="353" Margin="33,250,0,0" VerticalAlignment="Top" Width="197" SelectionChanged="city_list_SelectionChanged"/>
+        <ListBox x:Name="station_list" HorizontalAlignment="Left" Height="353" Margin="284,250,0,0" VerticalAlignment="Top" Width="300" SelectionChanged="station_list_SelectionChanged"/>
+        <Image HorizontalAlignment="Left" Height="174" VerticalAlignment="Top" Width="437" Source="./assets/logo_iws.png" Margin="10,10,0,0"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="33,210,0,0" VerticalAlignment="Top" Width="35" Source="./assets/cityscape.png" RenderTransformOrigin="0.939,0.175"/>
+        <Label Content="Cities" HorizontalAlignment="Left" Margin="73,205,0,0" VerticalAlignment="Top" Height="40" Width="65" FontSize="20" RenderTransformOrigin="0.769,-0.725" Foreground="#FF777777"/>
+        <Label Content="Stations" HorizontalAlignment="Left" Margin="335,205,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF777777"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="284,205,0,0" VerticalAlignment="Top" Width="35" Source="./assets/underground-sign.png"/>
+        <Label Content="Informations" HorizontalAlignment="Left" Margin="673,205,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#777777"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="641,210,0,0" VerticalAlignment="Top" Width="27" Source="./assets/info.png"/>
+        <Label Content="Address -" HorizontalAlignment="Left" Margin="641,273,0,0" VerticalAlignment="Top" Foreground="#AA3530" FontSize="15"/>
+        <Label Content="Available bike stands -" HorizontalAlignment="Left" Margin="641,393,0,0" VerticalAlignment="Top"  Foreground="#AA3530" FontSize="15"/>
+        <Label Content="Available bikes -" HorizontalAlignment="Left" Margin="641,334,0,0" VerticalAlignment="Top" Foreground="#AA3530" FontSize="15"/>
+        <Label x:Name="station_address" Content=". . ." HorizontalAlignment="Left" Margin="641,303,0,0" VerticalAlignment="Top" Foreground="#777777"/>
+        <Label x:Name="station_bike" Content=". . ." HorizontalAlignment="Left" Margin="822,337,0,0" VerticalAlignment="Top" Foreground="#777777" RenderTransformOrigin="0.521,0.5"/>
+        <Label x:Name="station_stand" Content=". . ." HorizontalAlignment="Left" Margin="822,397,0,0" VerticalAlignment="Top" Foreground="#777777"/>
+
+    </Grid>
+</Window>

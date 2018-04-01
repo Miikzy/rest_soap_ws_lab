@@ -2,11 +2,6 @@
 
 The main idea of this lab is to develop and deploy an intermediary Web Service (IWS) between the [Velib WS](https://developer.jcdecaux.com/#/home) and some WS clients.
 
-```mermaid
-graph LR
-A[Velib WS] -- Rest --> B[IWS]
-B --SOAP--> D[WS Client]
-```
 ## How to open it
 First of all, open Visual Studio as Administrator if it's not set by default. Open the file IWS_Soap.sln with. Do a Right-click on "Solution 'IWS_Soap'" in the Solution Explorator, then click on Properties. Select the projects you want to run. You must run IWS_Soap, with whatever client you want to test. Then, validate your choice and launch the project.
 

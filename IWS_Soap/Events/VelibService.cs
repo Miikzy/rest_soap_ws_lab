@@ -14,7 +14,7 @@ namespace IWS_Soap.Events
         private static int number_stand_available;
    
 
-        public void Subscribe(string city, string station)
+        public void Subscribe()
         {
             IVelibEvents subscriber = OperationContext.Current.GetCallbackChannel<IVelibEvents>();
             m_event += subscriber.StationChanged;

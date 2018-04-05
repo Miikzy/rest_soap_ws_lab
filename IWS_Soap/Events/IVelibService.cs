@@ -13,7 +13,7 @@ namespace IWS_Soap.Events
     interface IVelibService
     {
         [OperationContract]
-        void Subscribe(string city, string station);
+        void Subscribe();
 
         [OperationContract]
         void CheckIfChange(string city, string station);

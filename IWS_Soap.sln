@@ -21,6 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoring", "Monitoring\Mo
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientEvent", "ClientEvent\ClientEvent.csproj", "{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FC782439-E44A-4CE7-941A-10A4BE02B0E8} = {FC782439-E44A-4CE7-941A-10A4BE02B0E8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

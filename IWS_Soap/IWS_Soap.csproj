@@ -51,9 +51,11 @@
     <Compile Include="Contract.cs" />
     <Compile Include="IMonitor.cs" />
     <Compile Include="IService1.cs" />
+    <Compile Include="IService1Event.cs" />
     <Compile Include="Monitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
+    <Compile Include="Service1Event.cs" />
     <Compile Include="Station.cs" />
   </ItemGroup>
   <ItemGroup>

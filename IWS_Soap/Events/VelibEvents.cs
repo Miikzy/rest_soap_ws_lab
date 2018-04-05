@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IWS_Soap
+namespace IWS_Soap.Events
 {
-    interface IService1Event
+    class VelibEvents
     {
     }
 }

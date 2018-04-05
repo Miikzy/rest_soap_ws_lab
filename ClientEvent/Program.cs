@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IWS_Soap
+namespace ClientEvent
 {
-    class Service1Event
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

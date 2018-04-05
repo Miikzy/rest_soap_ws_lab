@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoring", "Monitoring\Mo
 		{FC782439-E44A-4CE7-941A-10A4BE02B0E8} = {FC782439-E44A-4CE7-941A-10A4BE02B0E8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientEvent", "ClientEvent\ClientEvent.csproj", "{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{60A46854-DA4C-4D11-94BE-A69C88452DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60A46854-DA4C-4D11-94BE-A69C88452DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60A46854-DA4C-4D11-94BE-A69C88452DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B487E63B-96FC-4AD5-B69E-6680BE5C5D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
